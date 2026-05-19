@@ -28,3 +28,7 @@ An additional interactive feature was implemented where users can enter their ow
 
 This project demonstrates the practical implementation of Natural Language Processing and Machine Learning techniques for text classification problems. It provides knowledge about text preprocessing, feature extraction, model training, prediction, and evaluation. Overall, the system successfully performs sentiment prediction with good accuracy and shows how NLP can be used for analyzing human language and opinions effectively.
 
+<img width="952" height="647" alt="Image" src="https://github.com/user-attachments/assets/67e35492-2b25-4d98-9454-e96e3b824634" />
+
+<img width="938" height="743" alt="Image" src="https://github.com/user-attachments/assets/d799fd24-5487-455e-872e-1dfb8fe0228e" />
+
