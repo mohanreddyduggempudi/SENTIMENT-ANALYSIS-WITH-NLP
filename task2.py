@@ -2,10 +2,9 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-import matplotlib.pyplot as plt
+from sklearn.metrics import accuracy_score
 
-df = pd.read_csv("IMDB-Dataset.csv")
+df = pd.read_csv("imdb-dataset.csv")
 
 X = df['review']
 y = df['sentiment']
@@ -28,25 +27,6 @@ accuracy = accuracy_score(y_test, y_pred)
 
 print("\nAccuracy:", accuracy)
 
-print("\nClassification Report:\n")
-print(classification_report(y_test, y_pred))
-
-cm = confusion_matrix(y_test, y_pred)
-
-print("\nConfusion Matrix:\n")
-print(cm)
-
-plt.imshow(cm)
-
-plt.title("Confusion Matrix")
-
-plt.xlabel("Predicted")
-plt.ylabel("Actual")
-
-plt.colorbar()
-
-plt.show()
-
 user_review = input("\nEnter a Review: ")
 
 user_review_tfidf = vectorizer.transform([user_review])
@@ -57,4 +37,3 @@ print("\nPredicted Sentiment:", prediction[0])
 
 print("\nConclusion:")
 print("The Sentiment Analysis model successfully predicts Positive or Negative reviews.")
-
